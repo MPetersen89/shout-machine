@@ -1,8 +1,11 @@
 $(document).ready(function() {
-  $("#form").submit(function(event) {
-  let constant = (whisperIn)
-  alert("#whisperIn")
-  }
+  $("#machine").submit(function(event) {
+    const whisperInInput = $("input#whisperIn").val();
 
-  event.preventDefault();
+    $(".whisperIn").text(whisperInInput);
+
+    $("#SHOUT").show();
+
+    event.preventDefault();
+  })
 })
